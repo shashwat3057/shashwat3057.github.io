@@ -47,11 +47,11 @@
         visibility: visible;
         position: inherit;
         background: #222;
-        padding: 19px 0px;
+        padding: 25px 0px;
     }
-    .logo a img {
+    /* .logo a img {
         max-width: 97px;
-    }
+    } */
 }
 
 /* Large Mobile :480px. */
