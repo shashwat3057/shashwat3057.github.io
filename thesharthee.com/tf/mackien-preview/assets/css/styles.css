@@ -1,0 +1,891 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: 
+    Template URI: 
+    Description: 
+    Author: Rashadul Islam
+    Author URI: http://rashadulislam.com/
+    Version: 1.0
+cccccccc
+-----------------------------------------------------------------------------------
+    
+    CSS INDEX
+    ===================
+  
+    1. Home Page
+        1.1 Header Area
+        1.2 Hero Area
+        1.3 About Area
+        1.4 Portfolio Area
+        1.5 Fact Area
+        1.6 Feature Blog
+        1.7 Contact Area
+        1.8 Footer Area
+
+-----------------------------------------------------------------------------------*/
+
+
+/*============================================
+    1. Home One / 1.1 Header Area
+*=============================================*/
+
+.header-area {
+    background: #000000;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.header-area.sticky-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.logo a {
+    display: inline-block;
+}
+
+.main-menu {
+    text-align: right;
+}
+
+.main-menu nav ul li {
+    display: inline-block;
+}
+
+.main-menu nav ul li a {
+    display: block;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 0;
+    font-weight: 400;
+    padding: 37px 24px;
+    position: relative;
+}
+.main-menu nav ul li a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 25%;
+    height: 5px;
+    width: 5px;
+    background: #fff;
+    border-radius: 10px;
+    margin: auto;
+    opacity: 0;
+    right: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.main-menu nav ul li a:hover:before,
+.main-menu nav ul li.active a:before {
+    opacity: 1;
+}
+
+.slicknav_menu .slicknav_menutxt {
+    display: none;
+}
+
+.slicknav_menu {
+    background: transparent;
+    margin-top: 21px;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+    background-color: #fff;
+    height: 2px;
+    width: 19px;
+    margin: 3px 0px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.slicknav_btn {
+    background-color: transparent;
+    position: relative;
+    margin-top: -42px;
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(2) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg) translate(1px, 7px);
+    transform: rotate(45deg) translate(1px, 7px);
+}
+
+.slicknav_menu .slicknav_open .slicknav_icon-bar:nth-child(3) {
+    -webkit-transform: rotate(-45deg) translateY(-6px);
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+.slicknav_menu {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.slicknav_nav {
+    background: #211898;
+    margin: 0;
+    padding: 6px 0px;
+}
+
+.slicknav_nav a:hover {
+    background: #fefefe none repeat scroll 0 0;
+    border-radius: 0;
+}
+
+.slicknav_nav a {
+    font-size: 14px;
+    letter-spacing: 0.01em;
+}
+
+.slicknav_nav .slicknav_arrow {
+    float: right;
+}
+
+.slicknav_nav .slicknav_row:hover,
+.slicknav_nav .slicknav_row:hover .slicknav_arrow {
+    border-radius: 0;
+    background-color: #3c3333;
+}
+
+
+/*============================================
+    END Header Area
+*=============================================*/
+
+
+/*============================================
+    1.2 Hero Area
+*=============================================*/
+
+.hero-area {
+    height: 100vh;
+    min-height: 750px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #000;
+}
+
+.hero-area:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.9;
+}
+
+.hero-area:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -443px;
+    z-index: -1;
+    height: 500px;
+    width: 2000px;
+    background-color: #fff;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+
+.hero-content {}
+
+.my-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+    margin-bottom: 40px;
+    position: relative;
+    border: 2px solid #fff;
+}
+
+.hero-content h2 {
+    font-size: 33px;
+    letter-spacing: 0;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.hero-content span {
+    color: #fff;
+    letter-spacing: 0;
+    font-size: 17px;
+    display: block;
+}
+.social-link {
+    margin-top: 32px;
+    padding: 0 10px;
+	display: inline-block;
+    position: relative;
+}
+.social-link::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    content: "";
+    margin: auto;
+}
+.social-link::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    width: 100px;
+    height: 2px;
+    background: #fff;
+    content: "";
+    margin: auto;
+}
+
+.social-link li {
+    display: inline-block;
+}
+.social-link li a {
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    margin: 0px 3px;
+}
+
+.social-link:hover li a {
+    color: #776bec;
+}
+
+.social-link li a:hover {
+    color: #fff;
+}
+
+.hero-area a.scrolldown {
+    color: #fff;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.hero-area a.scrolldown span {
+    display: block;
+}
+
+.hero-area a.scrolldown i {
+    font-size: 17px;
+    color: #fff;
+    -webkit-animation: scrldown 2s linear 0s infinite;
+    -o-animation: scrldown 2s linear 0s infinite;
+    animation: scrldown 2s linear 0s infinite;
+} 
+
+@keyframes scrldown {
+    0% {
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        -webkit-transform: translateY(10px);
+        -ms-transform: translateY(10px);
+        -o-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+
+/*============================================
+    END Hero Area
+*=============================================*/
+
+
+/*============================================
+    1.3 About Area
+*=============================================*/
+
+.abt-content h2 {
+    font-size: 29px;
+    letter-spacing: 0;
+    color: #222;
+    margin-bottom: 28px;
+}
+
+.abt-content p {
+    color: #666;
+    font-size: 15px;
+}
+
+.abt-content a {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 28px;
+    border-radius: 3px;
+    margin-top: 38px;
+}
+
+.abt-content a:hover {
+    color: #fff;
+    background-color: #000;
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 15px rgba(26, 14, 139, 0.5);
+}
+
+.abt-service {
+    margin-top: 53px;
+}
+.service-dot {
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 700;
+    color: #000;
+}
+
+.service-dot li {
+    display: inline-block;
+	cursor: pointer;
+}
+.service-dot li::before {
+    content: "/";
+    margin-right: 5px;
+}
+
+.service-dot li:first-child::before {
+    content: "";
+}
+
+.service-dot li.active {
+    font-size: 20px;
+}
+
+.single-service .icon {
+    font-size: 48px;
+    color: #000000;
+    float: left;
+    margin-right: 15px;
+}
+
+.single-service .cnt {
+    overflow: hidden;
+}
+
+.single-service h4 {
+    font-size: 21px;
+    letter-spacing: 0;
+    color: #333;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.single-service h4:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 1px;
+    width: 52px;
+    background: #000;
+}
+
+.single-service p {
+    color: #666;
+}
+
+/*============================================
+    END About Area
+*=============================================*/
+
+
+/*============================================
+    1.4 Portfolio Area
+*=============================================*/
+
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 35px;
+}
+
+.portfolio-menu {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.portfolio-menu button {
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 700;
+    color: #444;
+    background: transparent;
+    border: none;
+    margin: 0px 16px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.portfolio-menu button.active {
+    color: #000;
+}
+
+.portfolio-menu button:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    height: 2px;
+    width: 15px;
+    opacity: 0;
+    background: #261a98;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.portfolio-menu button.active:before {
+    opacity: 1;
+}
+
+.prt-grid {
+    margin-bottom: 30px;
+}
+
+.prt-item {
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.prt-item a {
+    position: relative;
+    display: block;
+}
+
+.prt-item a:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.prt-item:hover a:before {
+    opacity: 0.9;
+}
+
+.prt-item a i {
+    position: absolute;
+    left: 50%;
+    top: calc(50% + 10px);
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #fff;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.prt-item:hover a i {
+    opacity: 1;
+    top: 50%;
+}
+
+
+/*============================================
+    END Portfolio Area
+*=============================================*/
+
+
+/*============================================
+    1.5 Fact Area
+*=============================================*/
+
+.fact-area {
+    position: relative;
+    z-index: 1;
+    background: url(../images/bg/fact-bg.jpg) center/cover no-repeat;
+}
+
+.fact-area:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 0.8;
+}
+
+.fact-item {
+    text-align: center;
+}
+
+.fact-item h4 {
+    font-size: 53px;
+    color: #fff;
+    letter-spacing: 0;
+    line-height: 55px;
+    margin-bottom: 2px;
+}
+
+.fact-item span {
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 0;
+    font-weight: 400;
+}
+
+
+/*============================================
+    END Fact Area
+*=============================================*/
+
+
+/*============================================
+    1.6 Feature Blog
+*=============================================*/
+
+.single-blog {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.single-blog a.blg-thumb {
+    display: block;
+    position: relative;
+}
+
+.single-blog>a.blg-thumb:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.single-blog:hover>a.blg-thumb:before {
+    opacity: 0.7;
+}
+
+.single-blog a.blg-thumb img {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.blog-content {
+    padding: 0px 15px;
+}
+
+.blog-content h2 a {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin: 10px 0px 4px;
+    color: #222;
+}
+
+.blog-content h2 a:hover {
+    color: #000;
+}
+
+.blog-meta {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.blog-meta a {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #000;
+    float: right;
+    position: relative;
+}
+
+.blog-meta a:hover:before {
+    height: 8px;
+    opacity: 0.3;
+}
+
+.blog-content p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 26px;
+    color: #444;
+}
+
+.blog-content a.read-more {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 22px;
+    color: #000;
+}
+
+.blog-content a.read-more i {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 14px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.blog-content a.read-more:hover i {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
+}
+
+
+/*============================================
+    END Feature Blog
+*=============================================*/
+
+
+/*============================================
+    1.7 Contact Area
+*=============================================*/
+
+.contact-area {
+    position: relative;
+}
+
+.contact-area .section-title {
+    margin-bottom: 60px;
+}
+
+.cnt-left ul li {
+    font-size: 15px;
+    color: #444;
+    letter-spacing: 0;
+    line-height: 23px;
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+
+.cnt-left ul li span.ct-break {
+    display: block;
+}
+
+.social-link {
+    margin-top: 32px;
+}
+
+.social-link h5 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #444;
+    letter-spacing: 0;
+    margin-right: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.social-link h5:before {
+    content: '';
+    position: absolute;
+    left: -20%;
+    bottom: -1px;
+    height: 13px;
+    width: 120%;
+    background: #000;
+    opacity: 0.1;
+}
+
+.social-link a {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 11px;
+}
+
+.social-link:hover a {
+    color: #000;
+}
+
+.social-link a:hover {
+    color: #444;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    height: 34px;
+    width: 100%;
+    background: #fff;
+    border: none;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 20px;
+    letter-spacing: 0;
+    font-size: 14px;
+}
+
+.contact-form form input::-webkit-input-placeholder,
+.contact-form form textarea::-webkit-input-placeholder {
+    color: #000;
+}
+
+.contact-form form input::-moz-placeholder,
+.contact-form form textarea::-moz-placeholder {
+    color: #000;
+}
+
+.contact-form form input:-ms-input-placeholder,
+.contact-form form textarea:-ms-input-placeholder {
+    color: #000;
+}
+
+.contact-form form input:-moz-placeholder,
+.contact-form form textarea:-moz-placeholder {
+    color: #000;
+}
+
+.contact-form form textarea {
+    height: 87px;
+}
+
+.contact-form form .form-submit {
+    text-align: center;
+}
+
+.contact-form form button {
+    background: #f6f2ef;
+    color: #000;
+    border: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 9px 25px;
+    font-weight: 400;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-form form button i {
+    display: inline-block;
+    margin-left: 8px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.contact-form form button:hover i {
+    -webkit-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px);
+}
+
+
+
+/*============================================
+    END Contact Area
+*=============================================*/
+
+
+/*============================================
+    1.8 Footer Area
+*=============================================*/
+
+.footer-area {
+    padding: 30px 0px;
+    text-align: center;
+    background-color: #000;
+}
+
+.footer-area a.flogo img {
+    max-width: 100%;
+}
+
+.footer-area h2 {
+    font-size: 34px;
+    color: #fff;
+    line-height: 41px;
+    margin-bottom: 23px;
+    letter-spacing: 0;
+}
+
+.footer-area p {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0;
+    color: #fff;
+}
+
+.footer-area p.copy-right {
+    color: #fff;
+    margin-top: 25px;
+}
+
+
+/*============================================
+    END Footer Area
+*=============================================*/

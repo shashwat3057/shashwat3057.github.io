@@ -1,0 +1,112 @@
+/* (1366x768) WXGA Display */
+
+@media screen and (min-width: 1366px) and (max-width: 1920px) {
+    .hero-area:after{
+        width: 3000px;
+    }
+}
+
+/*Medium Desktop Device*/
+
+@media screen and (min-width: 1025px) and (max-width: 1366px) {}
+
+/* Normal desktop :991px. */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .abt-content h2 {
+        font-size: 24px;
+    }
+    .section-title h2 {
+        font-size: 38px;
+    }
+    .section-title {
+        margin-bottom: 40px;
+    }
+    .fact-item h4 {
+        font-size: 44px;
+    }
+}
+
+/* small mobile :320px. */
+
+@media (max-width: 768px) {
+    .ptb--100 {
+        padding: 80px 0px;
+    }
+    .pt--100 {
+        padding-top: 80px;
+    }
+    .pb--100 {
+        padding-bottom: 80px;
+    }
+    .pb--70 {
+        padding-bottom: 50px;
+    }
+    .header-area {
+        opacity: 1;
+        visibility: visible;
+        position: inherit;
+        background: #222;
+        padding: 19px 0px;
+    }
+    .logo a img {
+        max-width: 97px;
+    }
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {}
+
+/* small mobile :320px. */
+
+@media (min-width: 240px) and (max-width: 479px) {
+    .my-img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 45px;
+    }
+    .hero-area {
+        min-height: 603px;
+        padding-bottom: 78px;
+    }
+    .hero-content h2 {
+        font-size: 26px;
+        margin-bottom: 11px;
+    }
+    .about-area {
+        padding-top: 35px;
+    }
+    .abt-content h2 {
+        font-size: 23px;
+    }
+    .section-title h2 {
+        font-size: 32px;
+    }
+    .section-title,
+    .portfolio-menu {
+        margin-bottom: 35px;
+    }
+    .portfolio-menu button {
+        font-size: 15px;
+        margin: 0px 6px;
+    }
+    .fact-item {
+        margin: 30px 0px;
+    }
+    .fact-area {
+        padding: 40px 0px;
+    }
+    .contact-area {
+        padding-top: 40px;
+    }
+    .contact-area .section-title {
+        margin-bottom: 45px;
+    }
+    .footer-area {
+        padding: 70px 0px 60px;
+    }
+    .footer-area h2 {
+        font-size: 25px;
+    }
+}

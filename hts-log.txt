@@ -1,0 +1,19 @@
+HTTrack3.48-21 launched on Mon, 01 Apr 2019 03:31:19 at http://http://thesharthee.com/tf/mackien-preview/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/*
+(webhttrack -q -%i -iC2 http://http://thesharthee.com/tf/mackien-preview/ -O "/home/shashwat/websites4/Portfolio4" -n -%P -N0 -s2 -p7 -D -a -K0 -c4 -%k -A25000 -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -%s -%u )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+03:32:37	Error: 	"Not Found" (404) at link http://thesharthee.com/tf/mackien-preview/blog.html (from http://thesharthee.com/tf/mackien-preview/)
+03:32:56	Warning: 	HTML file (17786 bytes) retransferred due to lack of cache: http://thesharthee.com/tf/mackien-preview/index.html
+03:32:58	Warning: 	Retry after error -4 (No data (connection closed)) at link http://thesharthee.com/tf/mackien-preview/assets/images/portfolio/img4.jpg (from http://thesharthee.com/tf/mackien-preview/)
+03:32:59	Warning: 	Retry after error -4 (No data (connection closed)) at link http://thesharthee.com/tf/mackien-preview/assets/images/portfolio/img7.jpg (from http://thesharthee.com/tf/mackien-preview/)
+03:32:59	Warning: 	HTML file (1148 bytes) retransferred due to lack of cache: http://thesharthee.com/tf/mackien-preview/blog.html
+03:32:59	Error: 	"Not Found" (404) at link http://thesharthee.com/tf/mackien-preview/blog.html (from http://thesharthee.com/tf/mackien-preview/)
+03:33:02	Warning: 	Retry after error -4 (No data (connection closed)) at link http://thesharthee.com/tf/mackien-preview/assets/fonts/fontawesome-webfont.svg?v=4.6.3 (from http://thesharthee.com/tf/mackien-preview/assets/css/font-awesome.min.css)
+03:33:04	Error: 	"Not Found" (404) at link http://thesharthee.com/tf/mackien-preview/assets/css/owl.video.play.png (from http://thesharthee.com/tf/mackien-preview/assets/css/owl.carousel.css)
+
+HTTrack Website Copier/3.48-21 mirror complete in 1 minutes 56 seconds : 53 links scanned, 48 files written (3266506 bytes overall) [2685727 bytes received at 23152 bytes/sec], 920238 bytes transferred using HTTP compression in 24 files, ratio 32%, 4.3 requests per connection
+(3 errors, 5 warnings, 0 messages)
